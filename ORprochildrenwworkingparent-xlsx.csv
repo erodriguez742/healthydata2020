@@ -1,0 +1,23 @@
+Column,2010,2011,2012,2013,2014,2015,2016,2017
+PopTitle,Estimate,Estimate,Estimate,Estimate,Estimate,Estimate,Estimate,Estimate
+Total,71,73,73,74,75,75,77,78
+Sex,,,,,,,,
+   Male,71,73,73,74,75,76,77,78
+   Female,71,72,73,74,75,75,76,78
+Race/Ethnicity,,,,,,,,
+   Hispanic or Latino,61,65,65,66,69,69,72,73
+      Mexican American,60,65,65,65,69,70,71,72
+"   Black or African American, not Hispanic or Latino",53,56,57,57,60,62,64,65
+"   White, not Hispanic or Latino",79,79,80,81,82,81,82,84
+Age group,,,,,,,,
+   0-5 years,66,69,69,70,72,73,75,76
+   6-17 years,73,74,75,76,77,77,78,79
+Family income (percent poverty threshold),,,,,,,,
+   <100,24,27,27,27,31,30,29,33
+   >=100,83,85,85,85,87,86,87,87
+Country of birth,,,,,,,,
+   US,71,73,73,74,75,76,77,78
+   Outside US,67,71,72,72,69,69,72,73
+Geographic location,,,,,,,,
+   Metropolitan,71,73,74,75,76,76,77,78
+   Non-metropolitan,69,69,69,70,72,71,72,74
