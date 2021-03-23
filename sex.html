@@ -29,7 +29,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv", 
+d3.csv("sexprochildworkingparent.csv", 
          function(d){
     return { date : d3.timeParse("%Y")(d.date), name : d.name, value : d.value }
   },       
