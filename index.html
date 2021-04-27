@@ -17,113 +17,7 @@
           <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart1);
-    google.charts.setOnLoadCallback(drawChart2);
-    google.charts.setOnLoadCallback(drawChart3);
-    google.charts.setOnLoadCallback(drawChart4);
-    function drawChart1() {
-      var data = google.visualization.arrayToDataTable([
-        ['Year', 'Male', 'Female'],
-        ['2010',  14,      16.2],
-        ['2011',  13.6,      16.3],
-        ['2012',  13.6,       16.3],
-        ['2013',  13.2,      16.3],
-        ['2014',  13.4,      16.1],
-        ['2015',  12.2,      14.8],
-        ['2016', 11.3,      14],
-        ['2017', 11,      13.6],
-        ['2018', 10.6,      12.9]
-      ]);
 
-      var options = {
-        title: 'Proportion of People Living in Poverty, by Sex',
-        curveType: 'function',
-        legend: { position: 'bottom' }
-      };
-
-      var chart = new google.visualization.LineChart(document.getElementById('chart_1'));
-
-      chart.draw(data, options);
-    }
-
-    function drawChart2() {
-      var data = google.visualization.arrayToDataTable([
-        ['Year', 'Hispanic or Latinx', 'Mexican American', 'Black or African American, not Hispanic or Latinx', 'White, not Hispanic or Latinx'],
-        ['2010',  26.6,	28.6,	27.3,	9.9],
-        ['2011',  25.3,	27.1,	27.3,	9.8],
-        ['2012',  25.6,	26.7,	27,	9.7],
-        ['2013',  24.7,	25.8,	24.8,	10],
-        ['2014',  23.6,	25.1,	26.1,	10.1],
-        ['2015',  21.4,	22.4,	24.2,	9.1],
-        ['2016', 19.4,	20.3,	22.1,	8.8],
-        ['2017', 18.3,	18.6,	21,	8.7],
-        ['2018', 17.6,	18.5,	21.1,	8.1]
-      ]);
-
-      var options = {
-        title: 'Proportion of People Living in Poverty, by Race/Ethnicity',
-        curveType: 'function',
-        legend: { position: 'bottom' }
-      };
-
-      var chart = new google.visualization.LineChart(document.getElementById('chart_2'));
-
-      chart.draw(data, options);
-    }
-    function drawChart3() {
-      var data = google.visualization.arrayToDataTable([
-        ['Year', 'Male', 'Female'],
-        ['2010',  79.7,	83.9],
-        ['2011',  81.2,	84.4],
-        ['2012',  81.5,	84.6],
-        ['2013',  81.9,	84.8],
-        ['2014',  85.3,	88.1],
-        ['2015',  88,	90.7],
-        ['2016', 88.4,	91],
-        ['2017', 88.1,	90.5],
-        ['2018', 87.9,	90.1]
-      ]);
-
-      var options = {
-        title: 'Access to Healthcare through Insurance, by Sex',
-        curveType: 'function',
-        legend: { position: 'bottom' }
-      };
-
-      var chart = new google.visualization.LineChart(document.getElementById('chart_3'));
-
-      chart.draw(data, options);
-    }
-          function drawChart4() {
-      var data = google.visualization.arrayToDataTable([
-       ['Year', 'American Indian or Alaska Native only', 'Asian only', 'Native Hawaiian or Other Pacific Islander only', 'Black or African American only', 'White only', '2 or more races', 'Hispanic or Latino', 'Not Hispanic or Latino', 'Black or African American only, not Hispanic or Latino', 'White only, not Hispanic or Latino'],
-       ['2010',	56,	    82.9,	75.6,	79.4,	82.4,	84.2,	68,	    84.8,	79.3,	86.3],			
-       ['2011',	65.8,	83.5,	77.3,	81,	    83.3,	84,	    68.9,	85.8,	81.2,	87.1],			
-       ['2012',	73,	    83.2,	87.9,	82,	    83.3,	85.5,	69.6,	86.1,	82.2,	87.3],			
-       ['2013',	70.6,	85.8,	89.3,	81.1,	83.7,	84.7,	69.3,	86.6,	81.2,	87.8],			
-       ['2014',	71.7,	89.2,	87.8,	86.3,	86.7,	89.9,	74.5,	89.5,	86.5,	90.3],			
-       ['2015',	78.6,	92.5,	87.4,	88.7,	89.3,	90.5,	78.9,	91.8,	88.8,	92.5],			
-       ['2016',	74.6,	93.5,	90.7,	88.5,	89.8,	91,	    80.4,	91.9,	88.7,	92.7],			
-       ['2017',	73.1,	92.6,	88.8,	88.8,	89.4,	89.6,	79.4,	91.8,	88.9,	92.6],			
-       ['2018',	71.4,	92.6,	90.6,	87.9,	89.1,	89.9,	79.9,	91.3,	87.9,	92.2]			
-      ]);
-
-      var options = {
-        title: 'Access to Healthcare through Insurance, by Race',
-        curveType: 'function',
-        legend: { position: 'bottom' }
-      };
-
-      var chart = new google.visualization.LineChart(document.getElementById('chart_4'));
-
-      chart.draw(data, options);
-    }
-
-    
-      
-  </script>
         
           <style>
     
@@ -136,11 +30,11 @@
       }
     </style>
     </head>
-    <body id="page-top">
+     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">HP2020</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -158,9 +52,9 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Visualizing Health Data:</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">“Vulnerable” Populations and the Presentation of Healthy People 2020</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Data</a>
+                    <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
                 </div>
             </div>
         </header>
@@ -169,85 +63,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">Abstract</h2>
+                        <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
                         <p class="text-white-50">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat.
+                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page</a>
+                            . The theme is open source, and you can use it for any purpose, personal or commercial.
                         </p>
                     </div>
                 </div>
-               
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container">
-                <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/national-cancer-institute-Amw5k0Y1yJs-unsplash.jpg" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Population-Level Health Initiatives: The Social Determinants of Health</h4>
-                            <p class="text-black-50 mb-0">
-The link between people’s health and their surroundings [the social determinants of health] can no longer be ignored. Health inequities continue to grow across social classes, occupations, and ethnic groups within countries, even where more resources are made available and in spite of applying ‘the best’ evidence- based interventions. (WHO, 2006, n.p.)</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="containter">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat..</p>
-                </div>
-                
-                <div class="container">
-                    <h4>Rading the Data</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat..</p>
-                    
-                </div>
-                
-                <div class="container">
-                    <h4>What this Shows</h4>
-                    <p>Healthy People 2020 “provides science-based, 10-year national objectives for improving the health of all Americans” (“About Healthy People,” n.d.). The goals of the initiative, as stated by the U.S. government, are three-fold:
-<ul>
-    <li>Encourage collaborations across communities and sectors.</li>
-    <li> Empower individuals toward making informed health decisions.</li>
-                       <li> Measure the impact of prevention activities. (“About Healthy People,” n.d.)</li>
-                    </ul></p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum et augue eget suscipit. Suspendisse in consectetur lectus. Nulla sollicitudin risus eget urna porta, non scelerisque ante aliquam. Vestibulum sed mollis nisi. Donec dictum dui quis ligula iaculis, ultricies laoreet lectus efficitur. Suspendisse elementum tincidunt lectus at elementum. Curabitur eleifend libero purus, nec ullamcorper purus pretium id. In at purus vitae mauris convallis consequat.</p>
-                        
-                <div id='map'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kcmk2OTEiLCJhIjoiY2szMGsyYTczMHRqbjNtczF0bDg2Zm83YSJ9.91pXtlBbZG8dWo9-hnz04w';
-var map = new mapboxgl.Map({
-container: 'map',
-zoom: 3.68,
-center: [-98.136068, 38.316792],
-style: 'mapbox://styles/rodri691/cknyoija82o7817s0s1yj42a4'
-});
-
-map.on('click', function(e) {
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['hospitalclosures'] // replace this with the name of the layer
-  });
-
-  if (!features.length) {
-    return;
-  }
-
-  var feature = features[0];
-
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.Hospital
- + '</h3><p>' + feature.properties.ClosureYear + '</p>')
-    .addTo(map);
-});
-
-
-</script>    
-       
-                </section>
-             <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
                 <!-- Featured Project Row-->
@@ -259,7 +86,8 @@ map.on('click', function(e) {
                             <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
                         </div>
                     </div>
-                </div> <!-- Project One Row-->
+                </div>
+                <!-- Project One Row-->
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
@@ -348,14 +176,13 @@ map.on('click', function(e) {
                 </div>
             </div>
         </section>
-
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright &copy; Your Website 2021</div></footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
